@@ -1,6 +1,6 @@
 <script>
-    export let url = undefined
-    export let title = undefined
+    export let logo = undefined
+    export let name = undefined
 </script>
 
 <style>
@@ -20,6 +20,6 @@
 </style>
 
 <div class="item">
-    <img src={url} class="img" alt="gg">
-    <p class="title">{title}</p>
+    <img src={logo} class="img" alt="gg">
+    <p class="title">{name}</p>
 </div>

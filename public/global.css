@@ -1,6 +1,7 @@
-:global(*) {
-	margin: 0;
-	padding: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 html, body {
@@ -65,4 +66,61 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
+}
+
+body {
+	margin: 0;
+	background: #000000;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+	/* :global(.video-container.scrubbing .timeline::before,
+	.timeline-container:hover .timeline::before) {
+		display: block;
+	}
+
+	:global(.video-container.scrubbing .thumb-indicator,
+	.timeline-container:hover .thumb-indicator) {
+		--scale: 1;
+	}
+
+	:global(.video-container.scrubbing .timeline,
+	.timeline-container:hover .timeline) {
+		height: 100%;
+	}
+
+	:global(.video-container.scrubbing .preview-img,
+	.timeline-container:hover .preview-img) {
+		display: block;
+	}
+
+	:global(.video-container.full-screen .open) {
+		display: none;
+	}
+
+	:global(.video-container:not(.full-screen) .close) {
+		display: none;
+	} */
+
+button {
+	cursor: pointer;
+	background: none;
+	border: none;
+	color: inherit;
+	padding: 0;
+	height: 30px;
+	width: 30px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	opacity: 0.85;
+	transition: opacity 150ms ease-in-out;
+}
+
+button:hover {
+	opacity: 1;
 }
